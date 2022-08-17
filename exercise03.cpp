@@ -51,5 +51,5 @@ int main() {
 // Implement the functions here
 int volume(int height, int width, int length)
 {
-	return volume = height*width*length;
+	return height*width*length;
 }
