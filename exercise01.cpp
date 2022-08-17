@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main() {
  float marks[] = {78.4, 90.6, 45.9, 72.2, 54.4};
@@ -9,4 +10,11 @@ int main() {
           <<  names[r]
           << marks[r] << endl;
  }
-}
+  cout<<setw(5)<<setiosflags(ios::fixed)<<"No"<<endl;
+  cout<<setw(15)<<setiosflags(ios::fixed)<<"Name"<<endl;
+  cout<<setw(10)<<setiosflags(ios::fixed)<<"Marks"<<endl;
+  cout<<setw(10)<<setprecision(2)<<"Marks"<<endl;
+  
+  
+  
+    }
