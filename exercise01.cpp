@@ -6,14 +6,13 @@ int main() {
  char names[][20] = {"Ajith", "Wimal", "Kanthi", "Suranji", "Kushmitha"};
  cout << "No" << "Name" << "Marks" << endl;
  for (int r = 0; r < 5; r++) {
-     cout <<  r+1 
-          <<  names[r]
-          << marks[r] << endl;
+     cout<<setw(5)<<setiosflags(ios::fixed)<<r+1;
+     cout<<setw(15)<<setiosflags(ios::fixed)<<names[r];
+     cout<<setw(10)<<setiosflags(ios::fixed)<<setprecision(2)<<marks[r]<<endl;
+    
+  
  }
-  cout<<setw(5)<<setiosflags(ios::fixed)<<"No"<<endl;
-  cout<<setw(15)<<setiosflags(ios::fixed)<<"Name"<<endl;
-  cout<<setw(10)<<setiosflags(ios::fixed)<<"Marks"<<endl;
-  cout<<setw(10)<<setprecision(2)<<"Marks"<<endl;
+  
   
   
   
